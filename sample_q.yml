@@ -1,0 +1,86 @@
+# ! JUST READ - don't change the content of this file
+# Question structure extracted from survey.html
+inital_wars:
+  type: mc
+  label: Have you watched (nearly) every piece of Star Wars related media?
+  options:
+    'Yes': 'yes'
+    'No': 'no'
+overall_opinion:
+  type: slider_numeric
+  label: What is your overall opinion of the Star Wars franchise as a whole (with
+    1 being a poor rating and 10 representing a good rating)?
+  default: 5.0
+  options:
+    '0': 0.0
+    '1': 1.0
+    '2': 2.0
+    '3': 3.0
+    '4': 4.0
+    '5': 5.0
+    '6': 6.0
+    '7': 7.0
+    '8': 8.0
+    '9': 9.0
+    '10': 10.0
+rankings:
+  type: matrix
+  label: 'Below is a matrix containing the Star Wars Trilogies and Major TV shows.
+    Please fill in the sentence for each one: For (Movie/TV Show), I have a ____ opinion
+    of the option.'
+  options:
+    Bad: bad
+    Neutral: neutral
+    Good: good
+  row:
+    OG Trilogy (1977-1983): og_tril
+    Prequels (1999-2005): preq
+    Sequels (2015-2019: seq
+    Mandalorian (2019-): mando
+    Andor (2022-2025): andor
+rankings_og_tril:
+  type: mc
+  label: []
+  options:
+    Bad: bad
+    Neutral: neutral
+    Good: good
+rankings_preq:
+  type: mc
+  label: []
+  options:
+    Bad: bad
+    Neutral: neutral
+    Good: good
+rankings_seq:
+  type: mc
+  label: []
+  options:
+    Bad: bad
+    Neutral: neutral
+    Good: good
+rankings_mando:
+  type: mc
+  label: []
+  options:
+    Bad: bad
+    Neutral: neutral
+    Good: good
+rankings_andor:
+  type: mc
+  label: []
+  options:
+    Bad: bad
+    Neutral: neutral
+    Good: good
+future:
+  type: mc
+  label: Do you think Star Wars is moving in the right direction?
+  options:
+    'Yes': 'yes'
+    'No': 'no'
+continuance:
+  type: textarea
+  label: You mentioned on the previous question that you belive Star Wars is not heading
+    in the right direction. Can you elaborate on your decision?
+
